@@ -21,9 +21,9 @@ python game_theory.py -d <dataset_path> -o <output_path>
   xOSOT = real_df.loc[index, "xOSOT"]
 ## xSOT and xOSOT based on the counterfactual analysis
 
-  CxSOT = cf_df.loc[index, "xSOT"]
+  xSOT = cf_df.loc[index, "xSOT"]
   
-  CxOSOT = cf_df.loc[index, "xOSOT"]
+  xOSOT = cf_df.loc[index, "xOSOT"]
 
 ## Reference
 For technical details and full experimental results, please check the [paper](https://arxiv.org/abs/). Please consider citing our work if you find it helpful to yours:
