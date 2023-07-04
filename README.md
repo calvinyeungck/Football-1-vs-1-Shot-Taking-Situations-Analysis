@@ -1,6 +1,10 @@
 # Analyzing-Two-Agent-Interaction-in-Football-Shot-Taking-Situations
 
 ## Calculate xSOT and xOSOT 
+0. Install required package
+```
+pip install -r requirements.txt
+```
 1. Download data from StatsBomb and preprocess the data
 ```
 python data/data_download_plot.py
