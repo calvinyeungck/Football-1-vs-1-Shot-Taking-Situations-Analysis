@@ -49,7 +49,7 @@ def get_xSOT_xOSOT(dataset,verbose=False):
     df['shotoff_y'] = df['shot_outcome_grouped'].apply(lambda x: 1 if x == 'Off T' else 0)
     df['shoton_y']=df['shot_outcome_grouped'].apply(lambda x: 1 if x == 'On T' else 0)
 
-    #get the rule_based prediciton features
+    #get the rule_based prediction features
         #hyperparameter for the rule_based feature
     optimized_params=[36.94630071, 12.3578812 ,  0.4997678,   0.15766148, -2.30980703]
     prediction_list = []
@@ -105,7 +105,7 @@ def get_xSOT_xOSOT(dataset,verbose=False):
                                 dropout_rate=shot_block_hyperparameters["dropout_rate"][0], 
                                 activation=shot_block_hyperparameters["activation"][0], 
                                 embedding1=shot_block_hyperparameters["embedding1"][0],
-                                class_weights=0, #not required for prediciton
+                                class_weights=0, #not required for prediction
                                 device=device).to(device)
     
     shot_off_input_dim=len(shot_off_features)-1+shot_off_hyperparameters["embedding1"][0]
@@ -115,7 +115,7 @@ def get_xSOT_xOSOT(dataset,verbose=False):
                             dropout_rate=shot_off_hyperparameters["dropout_rate"][0], 
                             activation=shot_off_hyperparameters["activation"][0], 
                             embedding1=shot_off_hyperparameters["embedding1"][0],
-                            class_weights=0, #not required for prediciton
+                            class_weights=0, #not required for prediction
                             device=device).to(device)
 
     #load model
@@ -319,8 +319,8 @@ def remove_closest_defender(df):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--unprocessed_dataset_path","-d", help="data file path", default="/home/c_yeung/workspace6/python/project3/data/dataset.csv")
-    parser.add_argument("--output_path","-o", help="path to save the df with prediction value", default="/home/c_yeung/workspace6/python/project3/data/")
+    parser.add_argument("--unprocessed_dataset_path","-d", help="data file path")
+    parser.add_argument("--output_path","-o", help="path to save the df with prediction value")
     parser.add_argument("--verbose","-v", help="print out the progress", default=False)
     args = parser.parse_args()
 
