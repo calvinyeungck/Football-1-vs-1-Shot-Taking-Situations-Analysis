@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Dec 11 16:26:31 2022
-
-@author: calvi
-"""
-
 #%%
 import pandas as pd
 from statsbombpy import sb
@@ -127,10 +120,10 @@ df=df.drop(['shot_freeze_frame'], axis=1) #drop shot freeze frame
 
 #%%%
 
-df.to_csv("/home/c_yeung/workspace6/python/project3/data/dataset.csv", index=False, encoding='utf-8')
+df.to_csv("dataset.csv", index=False, encoding='utf-8')
 
 #%%
-df1=pd.read_csv("/home/c_yeung/workspace6/python/project3/data/dataset.csv")
+df1=pd.read_csv("dataset.csv")
 import numpy as np
 #%%
 #number of match 115, 51 from Euro 2020 and 64 from world cup 2022
@@ -143,7 +136,7 @@ import numpy as np
 
 df1["Dist2Goal"]= (((df1.location_x-120)*105/120)**2+((df1.location_y-40)*68/80)**2)**0.5
 df1["Ang2Goal"]= np.abs(np.arctan2((40-df1.location_y)*68/80,(120-df1.location_x)*105/120))
-df1.to_csv("/home/c_yeung/workspace6/python/project3/data/dataset.csv", index=False, encoding='utf-8')
+df1.to_csv("dataset.csv", index=False, encoding='utf-8')
 #%% plot graph for player position and feasible angle to goal
 
 def plot_event(row_of_data):
@@ -241,7 +234,7 @@ def plot_event(row_of_data):
     
     plt.show()  # If you are using a Jupyter notebook you do not need this line
 
-plot_event(df1.iloc[0])
-plot_event(df1.iloc[1000])
-plot_event(df1.iloc[2000])
-plot_event(df1.iloc[2500])
+# plot_event(df1.iloc[0])
+# plot_event(df1.iloc[1000])
+# plot_event(df1.iloc[2000])
+# plot_event(df1.iloc[2500])
