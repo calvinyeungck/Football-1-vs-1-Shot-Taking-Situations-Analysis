@@ -330,7 +330,7 @@ if __name__ == "__main__":
     parser.add_argument("-m","--method", help="method",default="powell")
     args = parser.parse_args()
     print("method:",args.method)
-    data=pd.read_csv("/home/c_yeung/workspace6/python/project3/data/train.csv")
+    data=pd.read_csv("train.csv")
 
     df=data[:]
     #target
@@ -409,7 +409,7 @@ if __name__ == "__main__":
 
     #save the result to csv with the list
     out_df = pd.DataFrame({'train_loss': logloss_list, 'valid_loss': valid_logloss_list, 'param': optimized_params_list})
-    out_df.to_csv(f'/home/c_yeung/workspace6/python/project3/result/shotblock/rule_based/result_{args.method}.csv', index=False)
+    out_df.to_csv(f'result_{args.method}.csv', index=False)
 
 #[36.94630071 12.3578812   0.4997678   0.15766148 -2.30980703]
 
