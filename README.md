@@ -17,17 +17,25 @@ python data/train_test_split.py
 ```
 python game_theory.py -d <dataset_path> -o <output_path>
 ```
+3. Analyze the shot-taking situations with xSOT
+```
+python xsot_analysis -r <row_to_analyze> -d <real_df_path> -o <output_path>
+```
 
-## xSOT and xOSOT based on the data
+## xSOT and xOSOT based on the data (step 2)
 
   xSOT = real_df.loc[index, "xSOT"] 
   
   xOSOT = real_df.loc[index, "xOSOT"]
-## xSOT and xOSOT based on the counterfactual analysis
+## xSOT and xOSOT based on the counterfactual analysis (step 2)
 
   xSOT = cf_df.loc[index, "xSOT"]
   
   xOSOT = cf_df.loc[index, "xOSOT"]
+
+## Analysis of shot-taking situations with xSOT
+
+
 
 ## Reference
 For technical details and full experimental results, please check the [paper](https://arxiv.org/abs/). Please consider citing our work if you find it helpful to yours:
