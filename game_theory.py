@@ -230,10 +230,9 @@ def get_xSOT_xOSOT(dataset,verbose=False):
 
                 offball_df = offball_row.to_frame().T
                 offball_block_prob=calculate_shot_block_prob(index, offball_df, scaler_1=optimized_params[0], scaler_2=optimized_params[1], scaler_3=optimized_params[2], mean=0, sigma=optimized_params[3], a=optimized_params[4], b=-optimized_params[4])
-                # plot_row(index,attacker_i,offball_block_prob,offball_row,path='/home/c_yeung/workspace6/python/project3/script/analysis/testing_image/')
-                
+               
                 offball_df=pd.DataFrame({"position":offball_row["position"],"location_x":offball_row["location_x"],"location_y":offball_row["location_y"],"Dist2Goal":offball_row["Dist2Goal"],"Ang2Goal":offball_row["Ang2Goal"],"rule_based_prediction":offball_block_prob},index=[0])
-                # pdb.set_trace()
+
                 with torch.no_grad():
                     shot_block_model.eval()
                     shot_block_pred_prob = shot_block_model(torch.tensor(offball_df[shot_block_features].values).to(device))
