@@ -7,19 +7,19 @@ pip install -r requirements.txt
 ```
 1. Download data from StatsBomb and preprocess the data
 ```
-python data/data_download_plot.py -o <output_path>
+python data/data_download_plot.py -o <output_dir>
 ```
 1.5 Optional: Split the dataset into train and test set
 ```
-python data/train_test_split.py -d <dataset_path> -o <output_path>
+python data/train_test_split.py -d <dataset_path> -o <output_dir>
 ```
 2. Get the xSOT and counterfactual xSOT value
 ```
-python game_theory.py -d <dataset_path> -o <output_path>
+python game_theory.py -d <dataset_path> -o <output_dir>
 ```
 3. Analyze the shot-taking situations with xSOT
 ```
-python xsot_analysis -r <row_to_analyze> -d <real_df_path> -o <output_path>
+python xsot_analysis -r <row_to_analyze> -d <real_df_path> -o <output_dir>
 ```
 
 ## xSOT and xOSOT based on the data (step 2)
