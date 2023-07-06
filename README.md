@@ -25,14 +25,14 @@ python xsot_analysis -r <row_to_analyze> -d <real_df_path> -o <output_dir>
 
 ## xSOT and xOSOT based on the data (step 2)
 
-  xSOT = real_df.loc[index, "xSOT"] 
+  xSOT = `real_df.loc[<index>, "xSOT"] `
   
-  xOSOT = real_df.loc[index, "xOSOT"]
+  xOSOT = `real_df.loc[<index>, "xOSOT"]`
 ## xSOT and xOSOT based on the counterfactual analysis (step 2)
 
-  xSOT = cf_df.loc[index, "xSOT"]
+  xSOT = `cf_df.loc[<index>, "xSOT"]`
   
-  xOSOT = cf_df.loc[index, "xOSOT"]
+  xOSOT = `cf_df.loc[<index>, "xOSOT"]`
 
 ## Analysis of shot-taking situations with xSOT (step 3)
 <img src="https://github.com/calvinyeungck/Analyzing-Two-Agent-Interaction-in-Football-Shot-Taking-Situations/blob/main/analysis/testing_plot_21.png" alt="alt text" width="558.8" height="320">
