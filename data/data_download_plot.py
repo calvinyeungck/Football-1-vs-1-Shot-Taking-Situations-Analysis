@@ -1,8 +1,12 @@
 #%%
 import pandas as pd
 from statsbombpy import sb
-
+import argparse
 #%%
+parser = argparse.ArgumentParser()
+parser.add_argument('--output_path','-o', type=str)
+args = parser.parse_args()
+
 
 #competition=sb.competitions() #UEFA Euro 2020 competition id = 55, season=43
 #world cup 2022 competition id = 43, season=106
@@ -120,7 +124,7 @@ df=df.drop(['shot_freeze_frame'], axis=1) #drop shot freeze frame
 
 #%%%
 
-df.to_csv("dataset.csv", index=False, encoding='utf-8')
+df.to_csv(args.output_path+"dataset.csv", index=False, encoding='utf-8')
 
 #%%
 df1=pd.read_csv("dataset.csv")
@@ -136,7 +140,7 @@ import numpy as np
 
 df1["Dist2Goal"]= (((df1.location_x-120)*105/120)**2+((df1.location_y-40)*68/80)**2)**0.5
 df1["Ang2Goal"]= np.abs(np.arctan2((40-df1.location_y)*68/80,(120-df1.location_x)*105/120))
-df1.to_csv("dataset.csv", index=False, encoding='utf-8')
+df1.to_csv(args.output_path+"dataset.csv", index=False, encoding='utf-8')
 #%% plot graph for player position and feasible angle to goal
 
 def plot_event(row_of_data):
