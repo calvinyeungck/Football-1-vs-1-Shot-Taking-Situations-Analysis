@@ -350,8 +350,7 @@ if __name__ == "__main__":
         # Obtain the optimized parameters and log loss
         optimized_params = opt_result.x
         logloss = opt_result.fun
-        # optimized_params=[20.01726205,  4.77671054,  0.95054114,  0.27260831, -7.73604756]
-        # logloss=0.8511282749294645
+
 
         # Store the optimized parameters and log loss
         optimized_params_list.append(optimized_params)
