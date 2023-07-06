@@ -35,6 +35,8 @@ python xsot_analysis -r <row_to_analyze> -d <real_df_path> -o <output_path>
 
 ## Analysis of shot-taking situations with xSOT
 
+![alt text](https://github.com/calvinyeungck/Analyzing-Two-Agent-Interaction-in-Football-Shot-Taking-Situations/blob/main/analysis/testing_plot_21.png)
+<img src="https://github.com/calvinyeungck/Analyzing-Two-Agent-Interaction-in-Football-Shot-Taking-Situations/blob/main/analysis/testing_plot_21.png" alt="alt text" width="698.5" height="400">
 
 
 ## Reference
