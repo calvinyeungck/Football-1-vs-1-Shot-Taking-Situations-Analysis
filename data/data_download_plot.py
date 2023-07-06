@@ -17,16 +17,6 @@ matches_id=matches1.match_id.tolist()+matches2.match_id.tolist()
 
 match1_len=len(matches1)
 
-#%%
-
-#lineups=sb.lineups(match_id=3795220)
-
-#%%
-#events = sb.events(match_id=3795220)
-#%%
-#events = events[events["type"]=="Shot"]
-#events = events.dropna(axis=1,how='all')
-
 #%%get shot data
 df=pd.DataFrame()
 count=1
