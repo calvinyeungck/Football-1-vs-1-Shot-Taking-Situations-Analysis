@@ -154,21 +154,6 @@ def integrate_product_simpsons_rule(f, a, b, num_points=1000):
 
     return integral
 
-# def is_point_within_area(point, bound_points):
-#     x1, y1 = bound_points[0]
-#     x2, y2 = bound_points[1]
-#     x3, y3 = bound_points[2]
-#     x, y = point
-
-#     # Calculate the areas of the triangles formed by the point and the three bound points
-#     area_total = abs((x2 - x1) * (y3 - y1) - (x3 - x1) * (y2 - y1))
-#     area_1 = abs((x - x1) * (y2 - y1) - (x2 - x1) * (y - y1))
-#     area_2 = abs((x - x2) * (y3 - y2) - (x3 - x2) * (y - y2))
-#     area_3 = abs((x - x3) * (y1 - y3) - (x1 - x3) * (y - y3))
-
-#     # Check if the sum of the triangle areas is equal to the total area
-#     return area_1 + area_2 + area_3 == area_total
-
 def is_point_within_area(point, bound_points):
     x1, y1 = bound_points[0]
     x2, y2 = bound_points[1]
@@ -382,19 +367,6 @@ if __name__ == "__main__":
         #calculate the logloss
         logloss = log_loss(train[result], prediction_list)
         print(logloss)
-        # #convert the probability to 0 or 1
-        # prediction_list_binary=[1 if x>0.5 else 0 for x in prediction_list]
-        # cm= confusion_matrix(train[result],prediction_list_binary)
-        # class_labels = ['True 0', 'True 1']
-        # # Print the confusion matrix with labels
-        # print("Confusion Matrix:")
-        # for i in range(len(class_labels)):
-        #     row_label = class_labels[i] + " Predicted"
-        #     row = cm[i, :]
-        #     print("{:<15}: {}".format(row_label, row))
-        # cm_percent = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-        # cm_percent = np.round(cm_percent, decimals=2)
-        # print("confusion matrix :",cm_percent)
     #validation
 
         valid_predition = []
@@ -411,28 +383,6 @@ if __name__ == "__main__":
     out_df = pd.DataFrame({'train_loss': logloss_list, 'valid_loss': valid_logloss_list, 'param': optimized_params_list})
     out_df.to_csv(f'result_{args.method}.csv', index=False)
 
-#[36.94630071 12.3578812   0.4997678   0.15766148 -2.30980703]
-
-    # for i in range(len(optimized_params_list)):
-    #     print("Optimized Parameters (Split {}):".format(i), optimized_params_list[i])
-    #     print("Log Loss (Split {}):".format(i), logloss_list[i])
-
-
-
-        # #convert the probability to 0 or 1
-        # prediction_list_binary=[1 if x>0.5 else 0 for x in prediction_list]
-        # cm= confusion_matrix(train[result],prediction_list_binary)
-        # class_labels = ['True 0', 'True 1']
-        # # Print the confusion matrix with labels
-        # print("Confusion Matrix:")
-        # for i in range(len(class_labels)):
-        #     row_label = class_labels[i] + " Predicted"
-        #     row = cm[i, :]
-        #     print("{:<15}: {}".format(row_label, row))
-        # cm_percent = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-        # cm_percent = np.round(cm_percent, decimals=2)
-        # print("confusion matrix :",cm_percent)
-        # pdb.set_trace()
 
 
 
