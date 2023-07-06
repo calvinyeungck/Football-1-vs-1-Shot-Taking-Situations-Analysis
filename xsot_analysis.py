@@ -11,7 +11,7 @@ def plot_event(row_of_data,output_path):
 
     plt.style.use('ggplot')
     
-    # get event and lineup dataframes for game 7478
+    # get event and lineup dataframes 
     # event data
     parser = Sbopen()
     df_event, df_related, df_freeze, df_tactics = parser.event(sample.match_id)
