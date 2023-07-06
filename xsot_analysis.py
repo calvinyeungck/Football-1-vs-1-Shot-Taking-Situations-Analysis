@@ -101,8 +101,8 @@ def plot_event(row_of_data,output_path):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--row_num','-r', type=int)
-    parser.add_argument('--data_path','-d', type=str,default="/home/c_yeung/workspace6/python/project3/data/real_df_v2.csv")
-    parser.add_argument('--output_path','-o', type=str,default='/home/c_yeung/workspace6/python/project3/script/analysis/testing_image_4/')
+    parser.add_argument('--data_path','-d', type=str)
+    parser.add_argument('--output_path','-o', type=str)
     args = parser.parse_args()
 
     # read the data
