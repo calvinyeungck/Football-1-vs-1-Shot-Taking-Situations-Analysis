@@ -33,8 +33,18 @@ python xsot_analysis -r <row_to_analyze> -d <real_df_path> -o <output_path>
   
   xOSOT = cf_df.loc[index, "xOSOT"]
 
-## Analysis of shot-taking situations with xSOT
-<img src="https://github.com/calvinyeungck/Analyzing-Two-Agent-Interaction-in-Football-Shot-Taking-Situations/blob/main/analysis/testing_plot_21.png" alt="alt text" width="698.5" height="400">
+## Analysis of shot-taking situations with xSOT (step 3)
+<img src="https://github.com/calvinyeungck/Analyzing-Two-Agent-Interaction-in-Football-Shot-Taking-Situations/blob/main/analysis/testing_plot_21.png" alt="alt text" width="558.8" height="320">
+
+| Jersey Number | xSOT | P(Shot Off) | P(Shot Block) | P(Control) |
+|---------------|------|-------------|---------------|------------|
+| 9             | 0.27 | 0.32        | 0.22          | 0.59       |
+| 20            | 0.23 | 0.60        | 0.03          | 0.63       |
+| 14            | 0.17 | 0.67        | 0.16          | 0.99       |
+| 12            | 0.15 | 0.63        | 0.20          | 0.89       |
+| 6             | 0.05 | 0.53        | 0.18          | 0.17       |
+| Shooter       | 0.03 | 0.51        | 0.46          | -          |
+| 8             | 0.00 | 0.61        | 0.40          | 0.60       |
 
 
 ## Reference
