@@ -7,11 +7,11 @@ pip install -r requirements.txt
 ```
 1. Download data from StatsBomb and preprocess the data
 ```
-python data/data_download_plot.py
+python data/data_download_plot.py -o <output_path>
 ```
 1.5 Optional: Split the dataset into train and test set
 ```
-python data/train_test_split.py
+python data/train_test_split.py -d <dataset_path> -o <output_path>
 ```
 2. Get the xSOT and counterfactual xSOT value
 ```
