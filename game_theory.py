@@ -145,9 +145,6 @@ def get_xSOT_xOSOT(dataset,verbose=False):
 
 #calculate the xOSOT 
     params = mpc.default_model_params()
-
-    # for col in df.columns:
-    #     print(col)
     prob_control_list=[]
     xOSOT_list=[]
     attacker_dict_list=[]
@@ -212,10 +209,7 @@ def get_xSOT_xOSOT(dataset,verbose=False):
                 #calculate the probabilty the offball player can control the ball and shoot at the current target position.
                 prob_control=mpc.calculate_pitch_control_at_target(target_position=target_position, attacking_players=[attacker_i], defending_players=defenders, ball_start_pos=np.array(ball_position), params=params)
                 attacker_dict[attacker_i.id]=[0,0,np.nan,np.nan,np.nan,prob_control]#[offside,xSOT,shotoff_prob,shot_block_prob,control_prob]
-        # prob_control_list.append(attacker_dict)
-        # print(attacker_dict)
         #calculate the xSOT for offball players
-        # plot_row(index,"shooter",row["rule_based_prediction"],row,path='/home/c_yeung/workspace6/python/project3/script/analysis/testing_image/')
         for attacker_i in attacker_dict.keys():
             if attacker_dict[attacker_i][0]==0 and attacker_dict[attacker_i][1]==0:
                 offball_position=row[f"player{attacker_i}_position_name"]
