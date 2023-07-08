@@ -6,7 +6,7 @@ from mplsoccer import Pitch, VerticalPitch, FontManager, Sbopen
 import argparse
 
 def plot_event(row_of_data,output_path):
-    
+    #code reference https://mplsoccer.readthedocs.io/en/latest/gallery/pitch_plots/plot_shot_freeze_frame.html#sphx-glr-gallery-pitch-plots-plot-shot-freeze-frame-py
     sample=row_of_data
 
     plt.style.use('ggplot')
