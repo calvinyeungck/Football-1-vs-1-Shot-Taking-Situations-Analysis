@@ -5,7 +5,7 @@ Complex interactions between two opposing agents frequently occur in various dom
 </p>
 To address this gap, we have proposed a novel framework that integrates machine learning models, rule-based models, and game theory to analyze the optimal strategies in football shot-taking scenarios. Additionally, we have introduced a novel metric called xSOT to evaluate players' actions in these situations. Overall, we expect that this framework will contribute to and inspire the analysis of complex interaction situations, particularly in the context of sports, where understanding optimal strategies can greatly benefit teams and players.
 
-## Calculate xSOT and xOSOT 
+## Calculate xSOT and xOSOT, and shot-taking situation analysis
 0. Install required package
 ```
 pip install -r requirements.txt
