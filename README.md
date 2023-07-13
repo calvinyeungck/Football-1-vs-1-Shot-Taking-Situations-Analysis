@@ -1,11 +1,8 @@
 # Analyzing-Two-Agent-Interaction-in-Football-Shot-Taking-Situations
 Complex interactions between two opposing agents frequently occur in various domains, and analyzing the strategies involved can be both beneficial and challenging. One such critical scenario is shot-taking in football, where decisions such as whether the attacker should shoot or pass the ball and if the defender should attempt to block the shot or not, play a crucial role in the outcome of the game. However, there are currently no effective and data-driven approaches to analyzing such situations. 
-
-<div style="text-align: center;">
-  <img src="https://github.com/calvinyeungck/Analyzing-Two-Agents-Interaction-in-Football-Shot-Taking-Situations/blob/main/xSOT_concept.png" alt="alt text"   
-  width="433.9" height="397.5">
-</div>
-
+<p align="center">
+  <img src="https://github.com/calvinyeungck/Analyzing-Two-Agents-Interaction-in-Football-Shot-Taking-Situations/blob/main/xSOT_concept.png" alt="alt text" width="433.9" height="397.5">
+</p>
 To address this gap, we have proposed a novel framework that integrates machine learning models, rule-based models, and game theory to analyze the optimal strategies in football shot-taking scenarios. Additionally, we have introduced a novel metric called xSOT to evaluate players' actions in these situations. Overall, we expect that this framework will contribute to and inspire the analysis of complex interaction situations, particularly in the context of sports, where understanding optimal strategies can greatly benefit teams and players.
 
 ## Calculate xSOT and xOSOT 
@@ -42,7 +39,9 @@ python xsot_analysis -r <row_to_analyze> -d <real_df_path> -o <output_dir>
   xOSOT = `cf_df.loc[<index>, "xOSOT"]`
 
 ## Analysis of shot-taking situations with xSOT (step 3)
+<p align="center">
 <img src="https://github.com/calvinyeungck/Analyzing-Two-Agent-Interaction-in-Football-Shot-Taking-Situations/blob/main/analysis/testing_plot_21.png" alt="alt text" width="558.8" height="320">
+</p>
 
 | Jersey Number | xSOT | P(Shot Off) | P(Shot Block) | P(Control) |
 |---------------|------|-------------|---------------|------------|
