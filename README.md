@@ -42,7 +42,7 @@ python xsot_analysis -r <row_to_analyze> -d <real_df_path> -o <output_dir>
 <p align="center">
 <img src="https://github.com/calvinyeungck/Analyzing-Two-Agent-Interaction-in-Football-Shot-Taking-Situations/blob/main/analysis/testing_plot_21.png" alt="alt text" width="558.8" height="320">
 </p>
-
+<!--
 | Jersey Number | xSOT | P(Shot Off) | P(Shot Block) | P(Control) |
 |---------------|------|-------------|---------------|------------|
 | 9             | 0.27 | 0.32        | 0.22          | 0.59       |
@@ -52,7 +52,67 @@ python xsot_analysis -r <row_to_analyze> -d <real_df_path> -o <output_dir>
 | 6             | 0.05 | 0.53        | 0.18          | 0.17       |
 | Shooter       | 0.03 | 0.51        | 0.46          | -          |
 | 8             | 0.00 | 0.61        | 0.40          | 0.60       |
-
+-->
+<div align="center">
+  <table>
+    <tr>
+      <th>Jersey Number</th>
+      <th>xSOT</th>
+      <th>P(Shot Off)</th>
+      <th>P(Shot Block)</th>
+      <th>P(Control)</th>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>0.27</td>
+      <td>0.32</td>
+      <td>0.22</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>0.23</td>
+      <td>0.60</td>
+      <td>0.03</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>0.17</td>
+      <td>0.67</td>
+      <td>0.16</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>0.15</td>
+      <td>0.63</td>
+      <td>0.20</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>0.05</td>
+      <td>0.53</td>
+      <td>0.18</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Shooter</td>
+      <td>0.03</td>
+      <td>0.51</td>
+      <td>0.46</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>0.00</td>
+      <td>0.61</td>
+      <td>0.40</td>
+      <td>0.60</td>
+    </tr>
+  </table>
+</div>
 
 ## Reference
 For technical details and full experimental results, please check the [paper](https://arxiv.org/abs/). Please consider citing our work if you find it helpful to yours:
