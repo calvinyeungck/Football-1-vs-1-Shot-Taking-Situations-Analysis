@@ -27,12 +27,12 @@ python game_theory.py -d <dataset_path> -o <output_dir>
 python xsot_analysis -r <row_to_analyze> -d <real_df_path> -o <output_dir>
 ```
 
-## xSOT and xOSOT based on the data (step 2)
+## xSOT and xOSOT when the closest defender blocking (step 2)
 
   xSOT = `real_df.loc[<index>, "xSOT"] `
   
   xOSOT = `real_df.loc[<index>, "xOSOT"]`
-## xSOT and xOSOT based on the counterfactual analysis (step 2)
+## xSOT and xOSOT when the closest defender not blocking  (step 2)
 
   xSOT = `cf_df.loc[<index>, "xSOT"]`
   
