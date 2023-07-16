@@ -1,4 +1,4 @@
-# Analyzing-Two-Agent-Interaction-in-Football-Shot-Taking-Situations
+# Football 1-vs-1 Shot Taking Situations Analysis
 Complex interactions between two opposing agents frequently occur in various domains, and analyzing the strategies involved can be both beneficial and challenging. One such critical scenario is shot-taking in football, where decisions such as whether the attacker should shoot or pass the ball and if the defender should attempt to block the shot or not, play a crucial role in the outcome of the game. However, there are currently no effective and data-driven approaches to analyzing such situations. 
 <p align="center">
   <img src="https://github.com/calvinyeungck/Analyzing-Two-Agents-Interaction-in-Football-Shot-Taking-Situations/blob/main/xSOT_concept.png" alt="alt text" width="433.9" height="397.5">
