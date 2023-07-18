@@ -26,6 +26,11 @@ python game_theory.py -d <dataset_path> -o <output_dir>
 ```
 python xsot_analysis -r <row_to_analyze> -d <real_df_path> -o <output_dir>
 ```
+## Theory-based: shot block model parameters
+In the code, the parameter scaler_1, scaler_2, scaler_3, sigma, a corresponding to c_1, c_2, c_3, c_4, a in the paper.
+```
+calculate_shot_block_prob(index,train,scaler_1=1,scaler_2=1,scaler_3=1,mean=0,sigma=0.4,a=-10,b=10)
+```
 
 ## xSOT and xOSOT when the closest defender blocking (step 2)
 
