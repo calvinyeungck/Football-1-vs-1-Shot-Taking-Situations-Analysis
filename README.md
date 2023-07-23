@@ -8,7 +8,7 @@ To address this gap, we have proposed a novel framework that integrates machine 
 ## Calculate xSOT and xOSOT, and shot-taking situation analysis
 0. Install required package
 ```
-pip install -r requirements.txt
+pip install -r requirements.yml
 ```
 1. Download data from StatsBomb and preprocess the data
 ```
