@@ -120,7 +120,7 @@ calculate_shot_block_prob(index,train,scaler_1=1,scaler_2=1,scaler_3=1,mean=0,si
 </div>
 
 ## Reference
-For technical details and full experimental results, please check the [paper](https://arxiv.org/abs/). Please consider citing our work if you find it helpful to yours:
+For technical details and full experimental results, please check the [paper](http://arxiv.org/abs/2307.14732). Please consider citing our work if you find it helpful to yours:
 
 ```
 @misc{
