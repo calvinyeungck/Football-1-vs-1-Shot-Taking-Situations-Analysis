@@ -123,7 +123,12 @@ calculate_shot_block_prob(index,train,scaler_1=1,scaler_2=1,scaler_3=1,mean=0,si
 For technical details and full experimental results, please check the [paper](http://arxiv.org/abs/2307.14732). Please consider citing our work if you find it helpful to yours:
 
 ```
-@misc{
-
+@misc{yeung2023strategic,
+      title={A Strategic Framework for Optimal Decisions in Football 1-vs-1 Shot-Taking Situations: An Integrated Approach of Machine Learning, Theory-Based Modeling, and Game Theory}, 
+      author={Calvin C. K. Yeung and Keisuke Fujii},
+      year={2023},
+      eprint={2307.14732},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
 }
 ```
