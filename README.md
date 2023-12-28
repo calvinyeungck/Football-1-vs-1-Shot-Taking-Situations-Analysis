@@ -45,7 +45,7 @@ calculate_shot_block_prob(index,train,scaler_1=1,scaler_2=1,scaler_3=1,mean=0,si
 
 ## Analysis of shot-taking situations with xSOT (step 3)
 <p align="center">
-<img src="https://github.com/calvinyeungck/Analyzing-Two-Agent-Interaction-in-Football-Shot-Taking-Situations/blob/main/analysis/testing_plot_21.png" alt="alt text" width="558.8" height="320">
+<img src="https://github.com/calvinyeungck/Football-1-vs-1-Shot-Taking-Situations-Analysis/blob/main/analysis/testing_plot_21.png" alt="alt text" width="558.8" height="320">
 </p>
 <!--
 | Jersey Number | xSOT | P(Shot Off) | P(Shot Block) | P(Control) |
